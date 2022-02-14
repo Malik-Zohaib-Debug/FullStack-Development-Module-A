@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+:root{
+    --sucess-color: green;
+    --error-color: orangered;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E0E0E0;
+    font-family:'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+    width: 600px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form-control {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:hover{
+    border-color: black;
+}
+.form-control.success input {
+    border-color: var(--sucess-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.container button {
+    background-color: navy;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 'Open Sans', sans-serif;
+  
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+
