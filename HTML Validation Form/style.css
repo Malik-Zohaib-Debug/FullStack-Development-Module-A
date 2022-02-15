@@ -76,6 +76,10 @@ h2 {
     visibility: hidden;
 }
 
+.form-control.error small {
+    visibility: visible;
+}
+
 .container button {
     background-color: navy;
     cursor: pointer;
