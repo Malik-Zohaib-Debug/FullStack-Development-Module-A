@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303f9f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.movie-container{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.movie-container select{
+    color: white;
+    font-size: 15px;
+    font-size: bolder;
+    background-color: black;
+    border: none;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 15px;
+}
+
+.seat {
+    background-color: #76ff03;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: orange;
+}
+
+.seat.occupied {
+    background-color: red;
+
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 15px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 15px;
+}
+
+.seat:not(.occupied):hover{
+   cursor: pointer;
+   transform: scale(1.25); 
+}
+
+.legend .seat:hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.legend {
+    background-color: rgba(0,0,0, 0.2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+.legend li small{
+    margin: 10px;
+}
+
+.screen {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    margin: 30px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.row {
+    display: flex;
+}
+
+p.totals span {
+    color: #E9D985;
+}
+
