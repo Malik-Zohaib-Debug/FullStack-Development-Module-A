@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: lightgrey;
     display: flex;
     flex-direction: column;
     align-items: center;
