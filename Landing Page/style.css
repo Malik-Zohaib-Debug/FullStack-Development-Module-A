@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --model-duration: 1s;
+    --primary-color: #227093;
+    --secondary-color: #d1ccc0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 0.5s ease;
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200,200,200, 0.1);
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-100%);
+}
+
+nav .logo{
+    padding: 30px;
+    text-align: center;
+}
+
+nav .logo img{
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(200,200,200, 0.1);
+    padding: 30px;
+}
+
+nav ul li:first-of-type{
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    padding: 40px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+header button:hover {
+    background-color: white;
+    color: black;
+}
+
+.toggle {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cta-btn {
+    padding: 10px 30px;
+    font-size: 24px;
+}
+
+.container {
+    padding: 10px 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+.model-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.model-container.show-model {
+    display: block;
+}
+
+.model {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    animation-name: modelopen;
+    animation-duration: var(--model-duration);
+}
+
+.model-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+.model-header h3 {
+    margin: 0;
+}
+
+.model-content {
+    padding: 20px;
+}
+
+.model-form div {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.model-content p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.model-content input{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 5px;
+}
+
+.model-form label {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.close-btn {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    color: white;
+}
+
+@keyframes modelopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
