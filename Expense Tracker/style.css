@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E1E8EB;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    margin: 30px auto;
+    width: 350px;
+}
+
+h1 {
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+h3 {
+    margin: 40px 0 10px;
+    padding: 10px;
+    border-bottom: 2px solid #343A40;
+}
+
+.credit-debit-balance {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.credit-debit-balance > div {
+    flex: 1;
+    text-align: center;
+}
+
+.credit-debit-balance > div:first-of-type {
+    border-right: 2px solid #343A40;
+}
+
+.money.credit {
+    color: #16C79A;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+.money.debit {
+    color: #F55C47;
+    font-size: 24px;
+    font-weight: bold;  
+    letter-spacing: 1.5px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.list li{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.credit {
+    border-right: 10px solid #16C79A;
+}
+
+.list li.debit {
+    border-right: 10px solid #F55C47;
+}
+
+.close-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 3px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.5 ease;
+    cursor: pointer;
+}
+
+.list li:hover .close-btn {
+    opacity: 1;
+}
+
+.form-control label{
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px 20px;
+    border: 0;
+}
+
+.btn {
+    background-color: #343A40;
+    width: 80%;
+    padding: 5px 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    border: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #16C79A;
+}
