@@ -1,18 +1,22 @@
-const toggle = document.getElementById('toggle');
-const close = document.getElementById('close');
+// get dom elements
+const menuToggle = document.getElementById('toggle');
 const open = document.getElementById('open');
-const model = document.getElementById('model');
+const close = document.getElementById('close');
+const modal = document.getElementById('modal');
 
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('show-nav');
+// add event listeners
+menuToggle.addEventListener('click', () => {
+    document.body.classList.toggle('show-nav')
 })
 
 open.addEventListener('click', () => {
-    model.classList.add('show-model');
+    modal.classList.add('show-modal');
 })
 
-close.addEventListener('click', () => model.classList.remove('show-model') );
+close.addEventListener('click', () => {
+    modal.classList.remove('show-modal');
+})
 
 window.addEventListener('click', e => 
-    e.target === model ? model.classList.remove('show-model') : false
+    e.target === modal ? modal.classList.remove('show-modal') : false
 )
