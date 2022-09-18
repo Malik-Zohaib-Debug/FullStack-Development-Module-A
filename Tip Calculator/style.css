@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin: 10px 0px;
+    background-color: orangered;
+    padding: 20px 10px;
+    width: 30%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    height: 90%;
+}
+
+.total-bill{
+    margin: 25px 5px;
+}
+
+.total-bill > input{
+    margin-top: 5px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+}
+
+.total-tip{
+    margin: 15px 5px;
+}
+
+.total-tip > input{
+    margin-top: 5px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+}
+
+.amount-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+}
+
+.controllers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.controllers > button{
+    border-radius: 50%;
+    padding: 3px 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#increment{
+    margin-right: 10px;
+}
+
+#decrement{
+    margin-left: 10px;
+    padding: 3px 9px;
+}
+
+#totalAmount{
+    margin-top: 10px;
+}
+
+.footer{
+    margin-top: 20%;
+    border-top: 1px solid white;
+}
