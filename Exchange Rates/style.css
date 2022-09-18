@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;400&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #B8FFF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    transition: 1s ease;
+    margin-bottom: 0;
+}
+
+p {
+    transition: 1s ease;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #FF1818;
+    border-bottom: 2px solid #FF1818;
+}
+
+#country {
+    border: none;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+#country:hover {
+    background-color: white;
+    color: black;
+}
+
+#details {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#details td, #details th {
+    border: 1px solid black;
+    padding: 8px 25px;
+}
+
+#details tr:hover {
+    background-color: #ECECEC;
+}
+
+
+
+
+ 
